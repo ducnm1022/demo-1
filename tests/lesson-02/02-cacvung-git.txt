@@ -1,0 +1,14 @@
+1. Working Directory
+- Đang có: file1, file2, file3 vì vừa touch xong.
+
+2. Staging Area
+- Đang có: Trống.
+- Lý do: Ở bước (d) có add "file1". Sau khi add xong thì có (e) là commit -m "add file1" rồi nên staging area không còn gì nữa.
+
+3. Repository
+- Đang có: Chỉ lưu duy nhất file1.
+- Lý do: Lịch sử Git lúc này chỉ ghi nhận mỗi file1 do nó đi đúng quy trình: tạo -> add (d) -> commit (e).
+
+> Bước (c) sai vì vừa mới git init xong, chưa add cái gì vào Staging nên không thể commit "init project". 
+
+> Bước (f) cố tình gõ commit trong khi chưa add thêm file nào vào giỏ (Staging đang trống) -> không add được thêm cái gì cả.

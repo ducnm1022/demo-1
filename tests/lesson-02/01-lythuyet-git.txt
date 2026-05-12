@@ -1,0 +1,12 @@
+Giải thích các câu lệnh Git:
+
+1. git init: 
+Khởi tạo một kho lưu trữ Git (repo) hoàn toàn mới ngay tại thư mục hiện tại. file sẽ di chuyển từ vùng local vào vùng working directory.
+2. git add <file_name>: 
+Đưa một file cụ thể vào Staging Area để chuẩn bị commit.
+
+3. git add .: 
+Đưa tất cả các file có sự thay đổi (file mới tạo, file vừa sửa, file bị xóa) trong thư mục hiện tại vào Staging Area cùng một lúc. 
+
+4. git commit -m "message": 
+git commit -m dùng để lưu lại những thay đổi đã được đưa vào staging Area, kèm theo một message mô tả như đã viết. Mỗi commit đến sau sẽ ở trên commit cũ, giống như cái cốc, cái nào vào trước thì ở dưới, cái nào vào sau thì ở trên
