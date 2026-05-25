@@ -1,0 +1,53 @@
+a. Tao 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working directory: 
+- Staging: 
+- Repository: 
+
+b. Chay lenh: git init
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository: 
+
+c. Chay lenh: git commit -m"init project"
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository: (Trong - fail do staging trong)
+
+d. Chay lenh: git add file1
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging: file1
+- Repository: (Trong)
+
+e. Chay lenh: git commit -m"add file"
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging: 
+- Repository: Co 1 commit (message: "add file" - chua file1)
+
+f. Chay lenh: git add .
+- Local: file1, file2, file3
+- Working directory: 
+- Staging: file2, file3
+- Repository: Co 1 commit (message: "add file" - chua file1)
+
+g. Chay lenh: git restore --staged file2
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging: file3
+- Repository: Co 1 commit (message: "add file" - chua file1)
+
+h. Chay lenh: git commit -m"add all files"
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging: 
+- Repository: Co 2 commit (Commit 1: "add file" chua file1; Commit 2: "add all files" chua file3)
+
+i. Chay lenh: git reset HEAD~1
+- Local: file1, file2, file3
+- Working directory: file2, file3 (file3 bi tra nguoc tu commit vua bi xoa ve day)
+- Staging: 
+- Repository: Co 1 commit (message: "add file" - chua file1)
