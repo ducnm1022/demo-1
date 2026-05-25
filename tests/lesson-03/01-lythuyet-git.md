@@ -1,0 +1,15 @@
+## git commit --amend
+- Dùng để sửa lại commit gần nhất (last commit).
+- Chỉnh sửa lại commit message, ngoài ra, nếu git add thêm một vài file, lệnh này sẽ gộp các file đó vào chung commit gần nhất mà không tạo ra một commit mới làm rác lịch sử.
+
+## git commit --amend -m"<message>"
+- Sửa nhanh message của commit gần nhất.
+- -m"message" cho phép ghi đè trực tiếp message của commit gần nhất bằng đoạn <message> mới
+
+## git restore --staged <file>
+- Đưa một file ra khỏi khu vực chờ (Unstage).
+- Khi đã "git add <file>" đưa file vào Staging Area, lệnh sẽ rút file đó về lại Working Directory. 
+
+## git reset HEAD~1
+- Xóa bỏ commit gần nhất nhưng vẫn giữ lại code.
+- HEAD~1 nghĩa là lùi về trước 1 bước. Lệnh này sẽ xóa bỏ commit cuối cùng vừa tạo. Toàn bộ những thay đổi code trong commit đó sẽ được đẩy trả lại về Working Directory.
