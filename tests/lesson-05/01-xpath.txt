@@ -1,0 +1,13 @@
+1. Sử dụng xpath tuyệt đối
+    a. lấy họ và tên: /html/body/div/div[1]/form/input[1]
+lấy trong form đăng ký và thẻ input đầu là họ và tên
+    b. lấy button đăng ký: /html/body/div/div[1]/form/button
+lấy trong form đăng ký và thẻ btn-register
+    c. lấy hàng đầu tiên trong tbody: /html/body/div[2]/table/tbody/tr[1]
+lấy từ html đến body, skip qua div 1 vào thẳng div 2, trong div 2 có table, có thẻ head và thẻ body, bên trong chứa 2 tr thì lấy thẻ đầu của tr 1
+2. Sử dụng xpath tương đối
+    a. lấy input có placeholder ='số điện thoại': //input[@placeholder='Số điện thoại']
+    b. Lấy email của "Trần Thị Bình" (hàng 2, cột 2): //table[@id='resultTable']/tbody/tr[2]/td[2]
+    c. Lấy số điện thoại của "Lê Hoàng Cường" (hàng 3, cột 3): //table[@id='resultTable']/tbody/tr[3]/td[3]
+    d. Lấy button có class="btn-register": //button[@class='btn-register']
+    e. Lấy table có id="resultTable": //table[@id='resultTable']
