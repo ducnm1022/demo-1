@@ -1,0 +1,20 @@
+a. các phần tử con (child):
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="">
+b. các phần tử cha (parent):
+    <form id="registrationForm">
+c. các phần tử hậu duệ (descendant)
+    có các phần tử con. không có các cháu chắt vì trong file html chỉ có mỗi 2 thằng con
+d. Các phần tử tổ tiên (ancestor)
+    có phần tử cha như ở trên. trong file html chỉ có to nhất là cái id=registrationForm là to nhất bọc cái thẻ id=chill
+e. Các phần tử anh em (sibling)
+    <div class="form-group" id="parent">
+    <div class="form-group"> mà có chứa gender, hobbies, register
+f. Các phần tử phía sau (following)
+    Tất cả các thẻ nằm sau thẻ div#child trong toàn bộ document, bao gồm các thẻ con bên trong các div anh em phía sau (Gender, Hobbies, Button Register)
+g. Các phần tử phía trước (preceding)
+    Tất cả các thẻ nằm trước thẻ div#child trong toàn bộ document, bao gồm thẻ label và input bên trong div#parent
+h. Các phần tử anh em phía sau cùng cấp (following-sibling)
+    <div class="form-group"> mà có chứa gender, hobbies, register
+i. Các phần tử anh em phía trước cùng cấp (preceding-sibling)
+    <div class="form-group" id="parent"> chứa username.
